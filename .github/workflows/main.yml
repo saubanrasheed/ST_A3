@@ -64,4 +64,5 @@ jobs:
 
       - name: Run Tests
         run: |
+          export DISPLAY=:99
           java -cp "lib/*:out" org.junit.platform.console.ConsoleLauncher --class-path out -c LoginAppTest
