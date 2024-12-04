@@ -30,9 +30,11 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Create MySQL Table
+      - name: Create MySQL   Table
         run: |
-          sleep 10
+          export DISPLAY=:99
+          sudo Xvfb :99 -screen 0 1280x1024x24 &
+          sleep 5
           mysql -h 127.0.0.1 --port 8888 -u root -proot -e "
           CREATE DATABASE IF NOT EXISTS assignment;
           USE assignment;
