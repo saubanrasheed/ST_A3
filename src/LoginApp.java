@@ -14,7 +14,7 @@ public class LoginApp extends JFrame {
     public JButton loginButton;
     private static final String DB_URL = "jdbc:mysql://127.0.0.1:8888/assignment";
     private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "12345678";
+    private static final String DB_PASSWORD = "root";
 
     public LoginApp() {
         setTitle("Sign in Screen");
